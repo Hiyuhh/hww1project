@@ -3,8 +3,7 @@
 # 5. Code Organization:  # 6. Testing and Debugging:  # 7. Documentation:  # 8. Optional Features (Bonus):
 # 9. GitHub Repository:
 
-# tasks = []
-tasks = [["This is a task", False], ["Another task", True]]
+tasks = []
 def cli():
     user_input = input("""
     Welcome to the To-Do List App!
@@ -72,9 +71,9 @@ def mark_complete():
     else:
         try:
             tasks[int(user_input)-1][1] = True
-            mark_complete()
         except (IndexError, ValueError, OverflowError):
             print("\n\n\nInvalid input.. Try again! ༼ つ ◕_◕ ༽つ")
+        finally:
             mark_complete()
             
 def delete_task():
@@ -87,9 +86,9 @@ def delete_task():
     else:
         try:
             tasks.pop(int(user_input)-1)
-            delete_task()
         except (ValueError, IndexError, OverflowError):
             print("\n\n\nInvalid input.. Try again! ༼ つ ◕_◕ ༽つ")
+        finally:
             delete_task()
 cli()
 
