@@ -39,7 +39,10 @@ def add_task():
     task = input("\nWhat task would you like to add? (Back) ")
     if task.lower() == "back":
         cli()
-    if task == "":
+    elif task.isspace() == True:
+        print("\n\n\nInvalid input.. Try again! ༼ つ ◕_◕ ༽つ")
+        add_task()
+    elif task == "":
         print("\n\n\nInvalid input.. Try again! ༼ つ ◕_◕ ༽つ")
         add_task()
     else:
@@ -50,9 +53,9 @@ def view_task():
     print(f"\nHere are your tasks so far:\n ")
     for task in tasks:
         if task[1] == True:
-            print(f"{task[0]}. ---> COMPLETE 🤩")
+            print(f"{task[0]}. ---> COMPLETE✅ 🤩")
         elif task[1] == False:
-            print(f"{task[0]}. ---> INCOMPLETE 🙄")
+            print(f"{task[0]}. ---> INCOMPLETE❌ 🙄")
     input("\nPress enter to go back  ")
     cli()
 
@@ -60,9 +63,9 @@ def mark_complete():
     print("\nPick the task you completed: (Back)\n")
     for i in range(len(tasks)):
         if tasks[i][1] == True:
-            print(f"{i+1}: {tasks[i][0]} ---> COMPLETE 🤩")
+            print(f"{i+1}: {tasks[i][0]} ---> COMPLETE✅ 🤩")
         if tasks[i][1] == False:
-            print(f"{i+1}: {tasks[i][0]} ---> INCOMPLETE 🙄")            
+            print(f"{i+1}: {tasks[i][0]} ---> INCOMPLETE❌ 🙄")            
     user_input = input()
     if user_input.lower() == "back":
         cli()
@@ -75,18 +78,18 @@ def mark_complete():
             mark_complete()
             
 def delete_task():
-    try:
-        print("\nPick a task you want to delete: (Back)\n")
-        for i in range(len(tasks)):
-            print(f"{i+1}: {tasks[i][0]}")
-        user_input = input()
-        if user_input.lower() == "back":
-            cli()
-        else:
+    print("\nPick a task you want to delete: (Back)\n")
+    for i in range(len(tasks)):
+        print(f"{i+1}: {tasks[i][0]}")
+    user_input = input()
+    if user_input.lower() == "back":
+        cli()
+    else:
+        try:
             tasks.pop(int(user_input)-1)
             delete_task()
-    except (ValueError, IndexError, OverflowError):
-        print("\n\n\nInvalid input.. Try again! ༼ つ ◕_◕ ༽つ")
-        delete_task()
+        except (ValueError, IndexError, OverflowError):
+            print("\n\n\nInvalid input.. Try again! ༼ つ ◕_◕ ༽つ")
+            delete_task()
 cli()
 
