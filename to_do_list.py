@@ -90,5 +90,5 @@ def delete_task():
             print("\n\n\nInvalid input.. Try again! ༼ つ ◕_◕ ༽つ")
         finally: # back to the delete_task function
             delete_task()
-cli() # Starting the CLI (Command Line Interface)
+cli() # Starting the CLI (Command Line Interface) function
 
