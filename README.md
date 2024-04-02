@@ -25,16 +25,23 @@
 
 ```
 What task would you like to add? (Back) Task Test
+<<<<<<< HEAD
 
+=======
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
 What task would you like to add? (Back) 
 ```
 *When a user is done adding tasks and wishes to go back to the menu, they can achieve that by typing in 'back', as seen below:*
 
 ```
 What task would you like to add? (Back) back
+<<<<<<< HEAD
 
     Welcome to the To-Do List App! 📝✨
 
+=======
+    Welcome to the To-Do List App! 📝✨
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
     Menu:
     1. Add a task
     2. View tasks
@@ -48,10 +55,15 @@ What task would you like to add? (Back) back
 **2. View tasks:** *This is where users would frequently visit to view their tasks, observing which ones require completion and which are completed. The (View tasks) function is strictly for observation as there is no user input required. Once users are done viewing their tasks they can simply press 'enter' to go back to the menu, as seen below:*
 ```
 Here are your tasks so far:
+<<<<<<< HEAD
 
 Task Test. ---> INCOMPLETE❌ 🙄
 Task Test2. ---> COMPLETE✅ 🤩
 
+=======
+Task Test. ---> INCOMPLETE❌ 🙄
+Task Test2. ---> COMPLETE✅ 🤩
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
 Press enter to go back
 ```
 <br />
@@ -60,6 +72,7 @@ Press enter to go back
 **3. Mark a task as complete:** *This function is where users can mark their tasks as complete, by typing in the number associated with the task as seen below, by selecting '1' for the incomplete task:* 
 ```
 Pick the task you completed: (Back)
+<<<<<<< HEAD
 
 1: Task Test ---> INCOMPLETE❌ 🙄
 2: Task Test2 ---> COMPLETE✅ 🤩
@@ -68,12 +81,19 @@ Pick the task you completed: (Back)
 
 Pick the task you completed: (Back)
 
+=======
+1: Task Test ---> INCOMPLETE❌ 🙄
+2: Task Test2 ---> COMPLETE✅ 🤩
+1
+Pick the task you completed: (Back)
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
 1: Task Test ---> COMPLETE✅ 🤩
 2: Task Test2 ---> COMPLETE✅ 🤩
 ```
 *When a user is done marking their tasks and wishes to go back to the menu, they can achieve that by typing in 'back', as seen below:*
 ```
 Pick the task you completed: (Back)
+<<<<<<< HEAD
 
 1: Task Test ---> COMPLETE✅ 🤩
 2: Task Test2 ---> COMPLETE✅ 🤩
@@ -82,6 +102,12 @@ back
 
     Welcome to the To-Do List App! 📝✨
 
+=======
+1: Task Test ---> COMPLETE✅ 🤩
+2: Task Test2 ---> COMPLETE✅ 🤩
+back
+    Welcome to the To-Do List App! 📝✨
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
     Menu:
     1. Add a task
     2. View tasks
@@ -95,6 +121,7 @@ back
 **4. Delete a task:** *If a user wants to delete a task for any reason, they can do that in this function. Once they decide on the task they wish to delete, they can simply, type in the number associated with the task, as seen below:*
 ```
 Pick a task you want to delete: (Back)
+<<<<<<< HEAD
 
 1: Task Test
 2: Task Test2
@@ -103,11 +130,18 @@ Pick a task you want to delete: (Back)
 
 Pick a task you want to delete: (Back)
 
+=======
+1: Task Test
+2: Task Test2
+2
+Pick a task you want to delete: (Back)
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
 1: Task Test
 ```
 *When a user is done deleting their tasks and wishes to go back to the menu, they can achieve that by typing in 'back', as seen below:*
 ```
 Pick a task you want to delete: (Back)
+<<<<<<< HEAD
 
 1: Task Test
 
@@ -115,6 +149,11 @@ back
 
     Welcome to the To-Do List App! 📝✨
 
+=======
+1: Task Test
+back
+    Welcome to the To-Do List App! 📝✨
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
     Menu:
     1. Add a task
     2. View tasks
@@ -128,14 +167,20 @@ back
 **5. Quit:** *When a user is done using the application and wishes to quit, they can achieve that by entering the number '5' in the menu screen, as seen below:* 
 ```
 Welcome to the To-Do List App! 📝✨
+<<<<<<< HEAD
 
+=======
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
     Menu:
     1. Add a task
     2. View tasks
     3. Mark a task as complete
     4. Delete a task
     5. Quit
+<<<<<<< HEAD
 
+=======
+>>>>>>> b768a6e11607648409181ca3bb4ccc8168bea3f9
     5
     
 >>
